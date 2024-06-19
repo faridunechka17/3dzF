@@ -12,7 +12,7 @@ function UsersPage() {
         username: "",
         email: "",
         password: "",
-        confirmPassword: ""
+        confirmPassword: "",
     });
 
     const formValue = (event) => {
