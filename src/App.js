@@ -1,18 +1,15 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import Menu from "./components/Menu";
-import MainPage from "./components/mainPage/MainPage";
-import UsersPage from "./components/usersPage/UsersPage";
-
+import PostPage from "./pages/postPage/PostPage";
+import CreatePostPage from "./pages/createPostPage/CreatePostPage";
 
 const App = () => {
     return (
             <BrowserRouter>
-                <Menu/>
                 <Routes>
-                    <Route index element={<MainPage/>} />
-                    <Route path='/users' element={<UsersPage/>} />
+                    <Route index element={<PostPage/>} />
+                    <Route path='/users' element={<CreatePostPage/>} />
                 </Routes>
             </BrowserRouter>
     );
